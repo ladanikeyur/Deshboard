@@ -26,6 +26,10 @@
           background-color: transparent;
           border-width: 0px;
           margin-right: 25px;
+          align-items: center;
+          .menu-text{
+            margin-right: 4px;
+          }
           .menu-img {
             height: 30px;
             width: 30px;
@@ -407,6 +411,9 @@
             font-weight: 400;
             color: #e1217b;
             line-height: 35.72px;
+            .text-underline{
+              border-bottom: 1px solid #e1217b;
+            }
           }
         }
       }

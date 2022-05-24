@@ -11,6 +11,7 @@ function App() {
       <div className="grid-bg">
         <div className="border-bg">
           <BgLayout
+            Side={Side}
             onClick={() => {
               setSide(!Side);
             }}
