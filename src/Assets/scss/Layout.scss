@@ -6,20 +6,19 @@
 .main-bg {
   background-image: url("../image/BG.png");
   background-repeat: no-repeat;
-  height: 100vh;
+  overflow: hidden;
   .grid-bg {
     background-image: url("../image/GRID.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5px;
-    height: 100%;
     padding: 20px;
     .border-bg {
       background-image: url("../image/Frame.png");
       background-repeat: no-repeat;
       background-size: cover;
       padding: 5px;
-      height: 100%;
+      background-size: 100% 100%;
       .menu-div {
         display: flex;
         align-items: center;
@@ -39,156 +38,184 @@
         display: block;
       }
       .main-body {
-          display: flex;
+        display: flex;
+        .Scroll {
+          font-family: "PP Fraktion Mono";
+          font-weight: 200;
+          font-size: 16px;
+          color: #e1217b;
+          margin-top: 10px;
+        }
+        .Button-div {
+          align-items: center;
+          margin-top: 2%;
+          button {
+            padding: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: transparent;
+            color: #e1217b;
+            border-color: #e1217b;
+            border-width: 1px;
+            border-style: solid;
+            font-family: "PP Fraktion Mono";
+            font-weight: 400;
+            font-size: 16px;
+            margin: 10px;
+          }
+        }
         .sidebar {
+          @media only screen and (min-width: 300px) and (max-width: 700px) {
+            position: absolute;
+          }
           @keyframes CardOpen {
             0% {
               margin-left: -300px;
               display: none;
             }
             2% {
-              margin-left: -295px;
-            }
-            4% {
               margin-left: -290px;
             }
-            6% {
-              margin-left: -285px;
-            }
-            8% {
+            4% {
               margin-left: -280px;
             }
-            10% {
-              margin-left: -275px;
-            }
-            12% {
+            6% {
               margin-left: -270px;
             }
-            14% {
-              margin-left: -265px;
-            }
-            16% {
+            8% {
               margin-left: -260px;
             }
-            18% {
-              margin-left: -255px;
-            }
-            20% {
+            10% {
               margin-left: -250px;
             }
-            22% {
-              margin-left: -245px;
-            }
-            24% {
+            12% {
               margin-left: -240px;
             }
-            26% {
-              margin-left: -235px;
-            }
-            28% {
+            14% {
               margin-left: -230px;
             }
-            30% {
-              margin-left: -225px;
-            }
-            32% {
+            16% {
               margin-left: -220px;
             }
-            34% {
-              margin-left: -215px;
-            }
-            36% {
+            18% {
               margin-left: -210px;
             }
-            38% {
-              margin-left: -205px;
-            }
-            40% {
+            20% {
               margin-left: -200px;
             }
-            42% {
+            22% {
               margin-left: -195px;
             }
-            44% {
+            24% {
               margin-left: -190px;
             }
-            46% {
+            26% {
               margin-left: -185px;
             }
-            48% {
+            28% {
               margin-left: -180px;
             }
-            50% {
+            30% {
               margin-left: -175px;
             }
-            52% {
+            32% {
               margin-left: -170px;
             }
-            54% {
+            34% {
               margin-left: -165px;
             }
-            56% {
+            36% {
               margin-left: -160px;
             }
-            58% {
+            38% {
               margin-left: -155px;
             }
-            60% {
+            40% {
               margin-left: -150px;
             }
-            62% {
+            42% {
               margin-left: -145px;
             }
-            64% {
+            44% {
               margin-left: -140px;
             }
-            66% {
+            46% {
               margin-left: -135px;
             }
-            68% {
+            48% {
               margin-left: -130px;
             }
-            70% {
+            50% {
               margin-left: -125px;
             }
-            72% {
+            52% {
               margin-left: -120px;
             }
-            74% {
+            54% {
               margin-left: -115px;
             }
-            76% {
+            56% {
               margin-left: -110px;
             }
-            78% {
-              margin-left: -110px;
+            58% {
+              margin-left: -100px;
             }
-            80% {
+            60% {
+              margin-left: -95px;
+            }
+            62% {
               margin-left: -90px;
             }
-            82% {
+            64% {
+              margin-left: -85px;
+            }
+            66% {
               margin-left: -80px;
             }
-            84% {
+            68% {
+              margin-left: -75px;
+            }
+            70% {
               margin-left: -70px;
             }
-            86% {
+            72% {
+              margin-left: -65px;
+            }
+            74% {
               margin-left: -60px;
             }
-            88% {
+            76% {
+              margin-left: -55px;
+            }
+            78% {
               margin-left: -50px;
             }
-            90% {
+            80% {
+              margin-left: -45px;
+            }
+            82% {
               margin-left: -40px;
             }
-            92% {
+            84% {
+              margin-left: -35px;
+            }
+            86% {
               margin-left: -30px;
             }
-            94% {
+            88% {
+              margin-left: -25px;
+            }
+            90% {
               margin-left: -20px;
             }
-            96% {
+            92% {
+              margin-left: -15px;
+            }
+            94% {
               margin-left: -10px;
+            }
+            96% {
+              margin-left: -5px;
             }
             88% {
               margin-left: 10px;
@@ -359,8 +386,8 @@
             margin-bottom: 10px;
             margin-left: -300px;
             animation-name: CardClose;
-            animation-duration: 0.5s;
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             margin-top: 20px;
           }
           .card-AnimationOpen {
@@ -370,8 +397,8 @@
             margin-bottom: 10px;
             margin-left: 10px;
             animation-name: CardOpen;
-            animation-duration: 0.5s;
-            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
             margin-top: 20px;
           }
           .btn-text {
