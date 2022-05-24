@@ -1,8 +1,25 @@
 .body {
-    margin: auto;
-    display: block;
-    text-align: center;
-    .FarmText {
-      margin-top: 2%;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+    padding-top: 50px;
+  }
+  margin: auto;
+  display: block;
+  text-align: center;
+  .logo-img {
+    height: 206px;
+    @media only screen and (min-width: 300px) and (max-width: 700px) {
+      height: 130px;
     }
   }
+  .Button-div{
+    @media only screen and (min-width: 300px) and (max-width: 700px) {
+        padding-top: 50px;
+      } 
+  }
+  .FarmText {
+    @media only screen and (min-width: 300px) and (max-width: 700px) {
+        margin-top: 5%;
+      }
+    margin-top: 2%;
+  }
+}

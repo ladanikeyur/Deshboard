@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 const HomePage = () => {
     return (
       <>
-        <img src={Logo} className="img-fluid m-auto d-block" height="206px" />
+        <img src={Logo} className="logo-img img-fluid m-auto d-block" />
         <img src={FarmText} className="img-fluid FarmText" />
         <div className="Button-div">
           <Button Lable="BUY EXPO ON UNISWAP" />
