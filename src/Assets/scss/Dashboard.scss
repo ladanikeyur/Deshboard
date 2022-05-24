@@ -1,0 +1,388 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main-bg {
+  background-image: url("../image/BG.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  .grid-bg {
+    background-image: url("../image/GRID.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    height: 100%;
+    padding: 20px;
+    .border-bg {
+      background-image: url("../image/Frame.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 5px;
+      height: 100%;
+      .menu-div {
+        display: flex;
+        align-items: center;
+        .btn-menu {
+          background-color: transparent;
+          border-width: 0px;
+          margin-right: 25px;
+          .menu-img {
+            height: 30px;
+            width: 30px;
+          }
+        }
+      }
+      .home-img {
+        color: white;
+        margin: auto;
+        display: block;
+      }
+      .main-body {
+          display: flex;
+        .sidebar {
+          @keyframes CardOpen {
+            0% {
+              margin-left: -300px;
+              display: none;
+            }
+            2% {
+              margin-left: -295px;
+            }
+            4% {
+              margin-left: -290px;
+            }
+            6% {
+              margin-left: -285px;
+            }
+            8% {
+              margin-left: -280px;
+            }
+            10% {
+              margin-left: -275px;
+            }
+            12% {
+              margin-left: -270px;
+            }
+            14% {
+              margin-left: -265px;
+            }
+            16% {
+              margin-left: -260px;
+            }
+            18% {
+              margin-left: -255px;
+            }
+            20% {
+              margin-left: -250px;
+            }
+            22% {
+              margin-left: -245px;
+            }
+            24% {
+              margin-left: -240px;
+            }
+            26% {
+              margin-left: -235px;
+            }
+            28% {
+              margin-left: -230px;
+            }
+            30% {
+              margin-left: -225px;
+            }
+            32% {
+              margin-left: -220px;
+            }
+            34% {
+              margin-left: -215px;
+            }
+            36% {
+              margin-left: -210px;
+            }
+            38% {
+              margin-left: -205px;
+            }
+            40% {
+              margin-left: -200px;
+            }
+            42% {
+              margin-left: -195px;
+            }
+            44% {
+              margin-left: -190px;
+            }
+            46% {
+              margin-left: -185px;
+            }
+            48% {
+              margin-left: -180px;
+            }
+            50% {
+              margin-left: -175px;
+            }
+            52% {
+              margin-left: -170px;
+            }
+            54% {
+              margin-left: -165px;
+            }
+            56% {
+              margin-left: -160px;
+            }
+            58% {
+              margin-left: -155px;
+            }
+            60% {
+              margin-left: -150px;
+            }
+            62% {
+              margin-left: -145px;
+            }
+            64% {
+              margin-left: -140px;
+            }
+            66% {
+              margin-left: -135px;
+            }
+            68% {
+              margin-left: -130px;
+            }
+            70% {
+              margin-left: -125px;
+            }
+            72% {
+              margin-left: -120px;
+            }
+            74% {
+              margin-left: -115px;
+            }
+            76% {
+              margin-left: -110px;
+            }
+            78% {
+              margin-left: -110px;
+            }
+            80% {
+              margin-left: -90px;
+            }
+            82% {
+              margin-left: -80px;
+            }
+            84% {
+              margin-left: -70px;
+            }
+            86% {
+              margin-left: -60px;
+            }
+            88% {
+              margin-left: -50px;
+            }
+            90% {
+              margin-left: -40px;
+            }
+            92% {
+              margin-left: -30px;
+            }
+            94% {
+              margin-left: -20px;
+            }
+            96% {
+              margin-left: -10px;
+            }
+            88% {
+              margin-left: 10px;
+            }
+            100% {
+              margin-left: 10px;
+            }
+          }
+          @keyframes CardClose {
+            0% {
+              margin-left: 10px;
+            }
+            2% {
+              margin-left: 10px;
+            }
+            4% {
+              margin-left: -10px;
+            }
+            6% {
+              margin-left: -20px;
+            }
+            8% {
+              margin-left: -30px;
+            }
+            10% {
+              margin-left: -40px;
+            }
+            12% {
+              margin-left: -50px;
+            }
+            14% {
+              margin-left: -60px;
+            }
+            16% {
+              margin-left: -70px;
+            }
+            18% {
+              margin-left: -80px;
+            }
+            20% {
+              margin-left: -90px;
+            }
+            22% {
+              margin-left: -100px;
+            }
+            24% {
+              margin-left: -105px;
+            }
+            26% {
+              margin-left: -110px;
+            }
+            28% {
+              margin-left: -115px;
+            }
+            30% {
+              margin-left: -120px;
+            }
+            32% {
+              margin-left: -125px;
+            }
+            34% {
+              margin-left: -130px;
+            }
+            36% {
+              margin-left: -135px;
+            }
+            38% {
+              margin-left: -140px;
+            }
+            40% {
+              margin-left: -145px;
+            }
+            42% {
+              margin-left: -150px;
+            }
+            44% {
+              margin-left: -155px;
+            }
+            46% {
+              margin-left: -165px;
+            }
+            48% {
+              margin-left: -170px;
+            }
+            50% {
+              margin-left: -175px;
+            }
+            52% {
+              margin-left: -180px;
+            }
+            54% {
+              margin-left: -185px;
+            }
+            56% {
+              margin-left: -190px;
+            }
+            58% {
+              margin-left: -195px;
+            }
+            60% {
+              margin-left: -200px;
+            }
+            62% {
+              margin-left: -205px;
+            }
+            64% {
+              margin-left: -210px;
+            }
+            66% {
+              margin-left: -215px;
+            }
+            68% {
+              margin-left: -220px;
+            }
+            70% {
+              margin-left: -225px;
+            }
+            72% {
+              margin-left: -230px;
+            }
+            74% {
+              margin-left: -235px;
+            }
+            76% {
+              margin-left: -240px;
+            }
+            78% {
+              margin-left: -245px;
+            }
+            80% {
+              margin-left: -250px;
+            }
+            82% {
+              margin-left: -255px;
+            }
+            84% {
+              margin-left: -260px;
+            }
+            86% {
+              margin-left: -265px;
+            }
+            88% {
+              margin-left: -270px;
+            }
+            90% {
+              margin-left: -275px;
+            }
+            92% {
+              margin-left: -280px;
+            }
+            94% {
+              margin-left: -285px;
+            }
+            96% {
+              margin-left: -290px;
+            }
+            88% {
+              margin-left: -295px;
+            }
+            100% {
+              margin-left: -300px;
+            }
+          }
+          .card-AnimationClose {
+            width: 250px;
+            background-color: transparent;
+            transition: all;
+            margin-bottom: 10px;
+            margin-left: -300px;
+            animation-name: CardClose;
+            animation-duration: 0.5s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            margin-top: 20px;
+          }
+          .card-AnimationOpen {
+            width: 250px;
+            background-color: transparent;
+            transition: all;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            animation-name: CardOpen;
+            animation-duration: 0.5s;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            margin-top: 20px;
+          }
+          .btn-text {
+            font-family: "PP Fraktion Mono";
+            font-size: 20px;
+            font-weight: 400;
+            color: #e1217b;
+            line-height: 35.72px;
+          }
+        }
+      }
+    }
+  }
+}
